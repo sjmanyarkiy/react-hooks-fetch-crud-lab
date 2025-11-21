@@ -9,15 +9,7 @@ function QuestionList() {
       .then((res) => res.json())
       .then((data) => setQuestions(data));
   }, [])
-
-  function handleAddQuestion(addedQuestion){
-    console.log(addedQuestion)
-
-    const addedItem = [...questions, addedQuestion]
-
-    setQuestions(addedItem)
-  }
-
+  
   function handleDelete(deletedQuestion){
     console.log("Item deleted", deletedQuestion)
 

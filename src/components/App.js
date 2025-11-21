@@ -7,9 +7,14 @@ function App() {
   const [page, setPage] = useState("List");
   const [questions, setQuestions] = useState([]);
 
-  function handleAddQuestion(newQuestion) {
-    setQuestions([...questions, newQuestion]);
+ function handleAddQuestion(addedQuestion){
+    console.log(addedQuestion)
+
+    const addedItem = [...questions, addedQuestion]
+
+    setQuestions(addedItem)
   }
+
 
   return (
     <main>
