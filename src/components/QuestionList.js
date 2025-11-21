@@ -44,7 +44,7 @@ function QuestionList() {
       <h1>Quiz Questions</h1>
       <ul>{/* display QuestionItem components here after fetching */}
         {questions.map((question) => {
-          return <QuestionItem key={question.id} question={question} onQuestionAdd={handleAddQuestion} onQuestionDelete={handleDelete} onQuestionUpdate={handleQuestionUpdate}/>
+          return <QuestionItem key={question.id} question={question} onQuestionDelete={handleDelete} onQuestionUpdate={handleQuestionUpdate}/>
         })}
       </ul>
     </section>
